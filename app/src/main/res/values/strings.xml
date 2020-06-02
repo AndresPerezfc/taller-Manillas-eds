@@ -11,9 +11,9 @@
     <string name="niquel">Niquel</string>
     <string name="plata">Plata</string>
     <string name="cuero">Cuero</string>
-    <string name="cuerda">Cuerda</string>
     <string name="selecionar_moneda">Seleccione una modeda</string>
     <string name="cantidad">Cantidad</string>
     <string name="total_pagar">Total a pagar</string>
     <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular valor</string>
 </resources>
