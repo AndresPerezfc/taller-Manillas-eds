@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Manillas</string>
+    <string name="manillas_xzy">MANILLAS XYZ</string>
+    <string name="material">Material</string>
+    <string name="dije">Dije</string>
+    <string name="tipo">Tipo</string>
+    <string name="cuerda">Cuerda</string>
+    <string name="martillo">Martillo</string>
+    <string name="ancla">Ancla</string>
+    <string name="oro_oro_rosado">Oro, Oro Rosado</string>
+    <string name="niquel">Niquel</string>
+    <string name="plata">Plata</string>
+    <string name="cuero">Cuero</string>
+    <string name="cuerda">Cuerda</string>
+    <string name="selecionar_moneda">Seleccione una modeda</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="total_pagar">Total a pagar</string>
+    <string name="resultado">Resultado</string>
+</resources>
