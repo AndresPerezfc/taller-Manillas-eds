@@ -16,4 +16,11 @@
     <string name="total_pagar">Total a pagar</string>
     <string name="resultado">Resultado</string>
     <string name="calcular">Calcular valor</string>
+    <string name="dolarusd">Dolar (USD)</string>
+    <string name="pesocop">Peso (COD)</string>
+
+    <string-array name="monedas">
+        <item>@string/dolarusd</item>
+        <item>@string/pesocop</item>
+    </string-array>
 </resources>

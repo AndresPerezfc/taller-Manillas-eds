@@ -5,13 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private RadioButton rdCuero, rdCuerda, rdMartillo, rdAncla, rdOro, rdNiquel, rdPlata;
     private TextView resultado;
+    private String [] monedas;
+    private Spinner combo_monedas;
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +32,23 @@ public class MainActivity extends AppCompatActivity {
         rdPlata = findViewById(R.id.rdPlata);
 
         resultado = findViewById(R.id.txtResultado);
+
+
+        combo_monedas = findViewById(R.id.cmbMoneda);
+        monedas = getResources().getStringArray(R.array.monedas);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, monedas);
+        combo_monedas.setAdapter(adapter);
+
     }
 
     public void calcular(View v){
+
+        int op, divisa=1;
+
         float material = 0, tipo = 0, dije = 0;
         int res;
+
+        op = combo_monedas.getSelectedItemPosition();
 
         if( rdCuero.isChecked()){
             material = (float)(100.0/3.0);
@@ -53,11 +70,20 @@ public class MainActivity extends AppCompatActivity {
             tipo = (float)(40.0/3.0);
         }
 
+        switch(op){
+            case 0:
+                divisa = 1;
+                break;
+            case 1:
+                divisa = 3200;
+                break;
+        }
+
         if(rdCuerda.isChecked() && rdMartillo.isChecked() && rdNiquel.isChecked()){
             resultado.setText("50");
         }else{
             res = (int)(material + dije + tipo);
-            resultado.setText(" " + res);
+            resultado.setText("$" + res*divisa);
         }
 
     }
