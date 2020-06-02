@@ -139,7 +139,6 @@
                 android:ems="10"
                 android:hint="@string/ingrese_cantidad"
                 android:inputType="textPersonName"
-                android:text="@string/ingrese_cantidad"
                 android:textColor="#8E8585"
                 android:textStyle="italic" />
 
