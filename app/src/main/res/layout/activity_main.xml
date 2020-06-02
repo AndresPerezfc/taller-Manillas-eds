@@ -100,6 +100,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -121,7 +122,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
             android:orientation="vertical">
 
             <TextView
@@ -130,10 +132,17 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cantidad" />
 
-            <Spinner
-                android:id="@+id/cmbCantidad"
+            <EditText
+                android:id="@+id/txtcantidad"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ingrese_cantidad"
+                android:inputType="textPersonName"
+                android:text="@string/ingrese_cantidad"
+                android:textColor="#8E8585"
+                android:textStyle="italic" />
+
         </LinearLayout>
     </LinearLayout>
 

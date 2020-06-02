@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private RadioButton rdCuero, rdCuerda, rdMartillo, rdAncla, rdOro, rdNiquel, rdPlata;
+    private EditText cantidad;
     private TextView resultado;
     private String [] monedas;
     private Spinner combo_monedas;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         rdOro = findViewById(R.id.rdOro);
         rdNiquel = findViewById(R.id.rdNiquel);
         rdPlata = findViewById(R.id.rdPlata);
+        cantidad = findViewById(R.id.txtcantidad);
 
         resultado = findViewById(R.id.txtResultado);
 
@@ -43,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void calcular(View v){
 
-        int op, divisa=1;
+        int op, divisa=1, cant;
+        cant = Integer.parseInt(cantidad.getText().toString());
 
         float material = 0, tipo = 0, dije = 0;
         int res;
@@ -83,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             resultado.setText("50");
         }else{
             res = (int)(material + dije + tipo);
-            resultado.setText("$" + res*divisa);
+            resultado.setText("$" + res*divisa*cant);
         }
 
     }
