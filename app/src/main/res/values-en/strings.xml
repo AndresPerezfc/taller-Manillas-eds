@@ -20,4 +20,6 @@
     <string name="dolarusd">Dollar (USD)</string>
     <string name="pesocop">Peso (COP)</string>
     <string name="ingrese_cantidad">Enter quantity</string>
+    <string name="error">You must select an option</string>
+    <string name="errorCantidad">You must enter an amount</string>
 </resources>

@@ -19,6 +19,8 @@
     <string name="dolarusd">Dolar (USD)</string>
     <string name="pesocop">Peso (COD)</string>
     <string name="ingrese_cantidad">Ingrese cantidad</string>
+    <string name="error">Debe selecionar una opción</string>
+    <string name="errorCantidad">Debe ingresar una cantidad</string>
 
     <string-array name="monedas">
         <item>@string/dolarusd</item>

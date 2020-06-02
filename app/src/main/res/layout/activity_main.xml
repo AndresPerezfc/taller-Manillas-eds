@@ -42,7 +42,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtDije"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15sp"
@@ -67,7 +67,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtTipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15sp"
@@ -127,18 +127,18 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txtCantidad"
+                android:id="@+id/lblCantidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/cantidad" />
 
             <EditText
-                android:id="@+id/txtcantidad"
+                android:id="@+id/txtCantidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/ingrese_cantidad"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColor="#8E8585"
                 android:textStyle="italic" />
 
